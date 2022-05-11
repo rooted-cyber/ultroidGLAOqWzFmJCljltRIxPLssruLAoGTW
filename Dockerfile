@@ -18,6 +18,7 @@ RUN git clone https://github.com/TeamUltroid/Ultroid.git
 RUN pip3 install --no-cache-dir -r /maruf/Ultroid/requirements.txt \
 RUN pip3 install -r /maruf/Ult*/res*/sta*/opt*
 RUN pip3 install av --no-binary av
+RUN pip3 uninstall decouple -y
 
 CMD ["bash", "startup"]
 
